@@ -474,7 +474,7 @@ def empyrial(my_portfolio, rf=0.0, sigma_value=1, confidence_value=0.95):
     return (
         qs.plots.returns(returns, benchmark, cumulative=True),
         qs.plots.yearly_returns(returns, benchmark),
-        qs.plots.monthly_heatmap(returns),
+        qs.plots.monthly_heatmap(returns,benchmark),
         qs.plots.drawdown(returns),
         qs.plots.drawdowns_periods(returns),
         qs.plots.rolling_volatility(returns),
